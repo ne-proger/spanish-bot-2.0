@@ -1,0 +1,8 @@
+python-telegram-bot==20.3
+openai==0.27.8
+cachetools==5.3.0
+python-dotenv==1.0.0
+deep-translator==1.10.1
+SpeechRecognition==3.10.0
+google-cloud-texttospeech==2.11.0
+ffmpeg-python==0.2.0
