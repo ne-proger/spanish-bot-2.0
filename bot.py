@@ -22,6 +22,9 @@ telegram_token = os.getenv("TELEGRAM_TOKEN")
 max_tokens = int(os.getenv("MAX_TOKENS", 3000))
 temperature = float(os.getenv("TEMPERATURE", 0.7))
 
+# Временный вывод для проверки ключа в логах
+print(f"Используемый OpenAI API ключ: {openai_api_key}")
+
 openai.api_key = openai_api_key
 
 # Настройка логирования
