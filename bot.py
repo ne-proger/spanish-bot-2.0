@@ -17,7 +17,7 @@ import time
 load_dotenv()
 
 # Получение ключей API и параметров
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai_api_key = os.getenv("OPENAI_API_KEY")
 telegram_token = os.getenv("TELEGRAM_TOKEN")
 max_tokens = int(os.getenv("MAX_TOKENS", 3000))
 temperature = float(os.getenv("TEMPERATURE", 0.7))
