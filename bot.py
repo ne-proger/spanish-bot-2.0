@@ -271,7 +271,10 @@ async def handle_message(update: Update, context: CallbackContext):
         
 # os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/dmitrytaran/Desktop/bot/vs_code/emerald-entity-438210-k7-bea7a0cd69ae.json"
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
+# os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
+
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/etc/secrets/GOOGLE_APPLICATION_CREDENTIALS"
+
 
 
 # Обработка голосовых сообщений с ответом голосом
