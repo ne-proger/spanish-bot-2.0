@@ -269,7 +269,10 @@ async def handle_message(update: Update, context: CallbackContext):
         response = await gpt_response(user_message)
         await update.message.reply_text(response)
         
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/dmitrytaran/Desktop/bot/vs_code/emerald-entity-438210-k7-bea7a0cd69ae.json"
+# os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/dmitrytaran/Desktop/bot/vs_code/emerald-entity-438210-k7-bea7a0cd69ae.json"
+
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
+
 
 # Обработка голосовых сообщений с ответом голосом
 async def handle_voice_message(update: Update, context):
